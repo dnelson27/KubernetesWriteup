@@ -21,7 +21,8 @@
 ## A few key SysOps/Deployment Concepts
 ### High Availibility
 - __High Availibility (HA)__ is the concept of making your application/service fault-tolerant and redundant, as to prevent downtime in the case of an incident. Examples of incidents that High Availibility configurations attempt to solve for are:
-    - A database has a hardware failure that results in the loss of data held on that server.
+    - A server is overloaded with requests and users are unable to reach the service.
+    - A database experiances temporary IO suspension due to a scheduled backup.
     - A natural disaster knocks out power in a datacenter, leaving your servers unresponsive for a period of time.
     - A bug causes an application to crash unexpectedly.
 
