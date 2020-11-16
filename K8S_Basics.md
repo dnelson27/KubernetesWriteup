@@ -70,15 +70,7 @@
     - __Scheduler:__ kube-scheduler watches for newly created pods that have not been assigned a node, and selects a node for them to run on based on resource requiremetnts, hardware/software policy constraints, label-based eligibility (affinity and anti-affinity), deadlines and workload interference.
     - __etcd:__ A highly-availible (distributed across servers) key-value store for all persistent cluster data. Periodic back-ups are recommended here.
 
-## Simple Example
-The following use minikube, a stripped down, single node version of kubernetes to deploy a simple application that will send/recieve data from a frontend NGINX server to a backend Flask server
-1.  Install minikube by following: https://minikube.sigs.k8s.io/docs/start/
-2. Install a container or VM manager like Docker or VirtualBox, compatible "drivers" are availible here https://minikube.sigs.k8s.io/docs/drivers/
-3. Start minikube with:
-````
-minikube start
-````
-
+![](assets/k8s_diagram.png)
 
 ## In Practice
 - Kubernetes at-scale can require a significant amount of engineering resources and can become complex as an application grows and the number of microservices increases. Running self-managed K8s in production should be restricted to companies with experienced staff and the people-power to manage it securely.
